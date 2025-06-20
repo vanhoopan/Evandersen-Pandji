@@ -82,24 +82,28 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.profile-pic {
-  width: 100%;
-  height: auto;
-  max-height: 80vh;
-  object-fit: cover;
-  opacity: 0;
-  animation: fadeIn 2s ease-out forwards;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 
-/* Animation */
+.profile-pic {
+  width: 90%;
+  max-width: 1200px;
+  max-height: 80vh;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+
+  /* animation */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 1.8s ease-out forwards;
+}
+
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
   to {
     opacity: 1;
     transform: translateY(0);
