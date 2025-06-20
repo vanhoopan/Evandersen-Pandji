@@ -82,25 +82,25 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.hero {
+.banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 40px;
+  padding: 20px;
 }
 
-.profile-pic {
-  width: 90%;
-  max-width: 1200px;
-  max-height: 900px;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+.banner-pic {
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 
-  /* animation */
+  /* Fade-in animation */
   opacity: 0;
   transform: translateY(30px);
-  animation: fadeIn 1.8s ease-out forwards;
+  animation: fadeIn 1.5s ease-out forwards;
 }
 
 @keyframes fadeIn {
