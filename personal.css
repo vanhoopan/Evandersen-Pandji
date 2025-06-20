@@ -81,3 +81,27 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+.profile-pic {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
